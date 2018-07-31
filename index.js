@@ -14,10 +14,10 @@ function nowServing(katzDeliLine){
 }
 
 function currentLine(katzDeliLine){
-  if (katzDeliLine.length>=1){
+  if (katzDeliLine.length>1){
     var incrementNumbersWithNames = [];
   
-    for (let katzDeliLineIndex = 0; katzDeliLineIndex <= katzDeliLine.length; katzDeliLineIndex++){
+    for (let katzDeliLineIndex = 0; katzDeliLineIndex < katzDeliLine.length; katzDeliLineIndex++){
         incrementNumbersWithNames.push(` ${katzDeliLineIndex + 1}. ${katzDeliLine[katzDeliLineIndex]}`)
     }
     return `The line is currently:${incrementNumbersWithNames}`
@@ -26,7 +26,7 @@ function currentLine(katzDeliLine){
   }
 }
   
- /*so i'm pretty sure '4. undefined' is coming up as an error because 
+/* had to change 
   
   
   /*if (katzDeliLine.length>=1){

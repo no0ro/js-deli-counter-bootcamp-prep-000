@@ -1,8 +1,7 @@
 var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, newCustomer){
-  katzDeliLine.length
-  katzDeliLine.push(number);
+  katzDeliLine.push(newCustomer);
   return `Welcome, ${newCustomer}. You are number ${katzDeliLine.length} in line.`;
 }
 

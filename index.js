@@ -26,7 +26,7 @@ function currentLine(katzDeliLine){
   }
 }
   
-/* had to change 
+/* took off the '='' sign in line 17 and 20 with '>=' and fixed the '4. undefined error'
   
   
   /*if (katzDeliLine.length>=1){

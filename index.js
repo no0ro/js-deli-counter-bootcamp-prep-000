@@ -18,14 +18,20 @@ function currentLine(katzDeliLine){
     var incrementNumbersWithNames = [];
   
     for (let katzDeliLineIndex = 0; katzDeliLineIndex <= katzDeliLine.length; katzDeliLineIndex++){
-        incrementNumbersWithNames.push(`${katzDeliLineIndex + 1} . ${katzDeliLine[katzDeliLineIndex]}`)
+        incrementNumbersWithNames.push(`${katzDeliLineIndex + 1} . ${katzDeliLine[katzDeliLineIndex]} , `)
     }
-    return `The line is currently: 
+    return `The line is currently: ${incrementNumbersWithNames}`
+  }else{
+    return `The line is currently empty.`;
   }
+}
   
-  if (katzDeliLine.length>=1){
+  
+  
+  
+  /*if (katzDeliLine.length>=1){
     return `The line is currently: 1. ${katzDeliLine[0]}, 2. ${katzDeliLine[1]}, 3. ${katzDeliLine[2]}`;
   } else {
    return `The line is currently empty.`;
-  }
-}
+  }*/
+

@@ -17,7 +17,7 @@ function currentLine(katzDeliLine){
   var incrementNumbersWithNames = [];
   
   for (let katzDeliLineIndex = 0; katzDeliLineIndex <= katzDeliLine.length; katzDeliLineIndex++){
-    incrementNumbersWithNames.push `${katzDeliLineIndex + 1
+    incrementNumbersWithNames.push(`${katzDeliLineIndex + 1} . ${
   }
   
   if (katzDeliLine.length>=1){

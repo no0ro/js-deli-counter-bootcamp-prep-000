@@ -17,7 +17,7 @@ function currentLine(katzDeliLine){
   if (katzDeliLine.length>=1){
     var incrementNumbersWithNames = [];
   
-    for (let katzDeliLineIndex = 0; katzDeliLineIndex <= katzDeliLine.length; ++katzDeliLineIndex){
+    for (let katzDeliLineIndex = 0; katzDeliLineIndex <= katzDeliLine.length; katzDeliLineIndex++){
         incrementNumbersWithNames.push(` ${katzDeliLineIndex + 1}. ${katzDeliLine[katzDeliLineIndex]}`)
     }
     return `The line is currently:${incrementNumbersWithNames}`

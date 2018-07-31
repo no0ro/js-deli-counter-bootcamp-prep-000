@@ -14,10 +14,13 @@ function nowServing(katzDeliLine){
 }
 
 function currentLine(katzDeliLine){
-  var incrementNumbersWithNames = [];
+  if (katzDeliLine.length>=1){
+    var incrementNumbersWithNames = [];
   
-  for (let katzDeliLineIndex = 0; katzDeliLineIndex <= katzDeliLine.length; katzDeliLineIndex++){
-    incrementNumbersWithNames.push(`${katzDeliLineIndex + 1} . ${katzDeliLine[katzDeliLineIndex]}`)
+    for (let katzDeliLineIndex = 0; katzDeliLineIndex <= katzDeliLine.length; katzDeliLineIndex++){
+      incrementNumbersWithNames.push(`${katzDeliLineIndex + 1} . ${katzDeliLine[katzDeliLineIndex]}`)
+    }
+    return `The line is currently: 
   }
   
   if (katzDeliLine.length>=1){
